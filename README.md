@@ -12,7 +12,7 @@
    - ``name`` can be set to whatever you'd like
 5. create token in github and running following command::
 
-    curl -X POST -d "grant_type=convert_token&client_id=<django-oauth-generated-client_id>&client_secret=<django-oauth-generated-client_secret>&backend=github&token=<github_token>" http://127.0.0.1:8000/auth/convert-token
+    `curl -X POST -d "grant_type=convert_token&client_id=<django-oauth-generated-client_id>&client_secret=<django-oauth-generated-client_secret>&backend=github&token=<github_token>" http://127.0.0.1:8000/auth/convert-token`
 6. This request returns an "access_token" that you should use with every HTTP requests to your REST API::
 
-    curl -H "Authorization: Bearer <backend_name> <backend_token>" http://127.0.0.1:8000/route/to/your/view 
+    `curl -H "Authorization: Bearer <backend_name> <backend_token>" http://127.0.0.1:8000/route/to/your/view `
